@@ -32,24 +32,3 @@ Our current active publications cover the following topics:
 * **Physics-Based Neural Network Certification**: Certifying steering safety margins under real-world weather bounds.
 * **Verification-to-Standards Mapping**: Establishing formal verification as compliance evidence in automotive engineering safety cases.
 * **Multimodal Winter Perception Datasets**: Introducing synchronized weather telemetry and vehicle dynamics data for adverse condition verification.
-
----
-
-## Repository Naming Conventions
-
-All repositories in this organization follow a structured, modular naming convention to maintain scalability across academic tracks and collaborative projects:
-
-`[Core-Technology]--[Domain/Context]--[Variant]`
-
-* **Double-Hyphen (`--`)**: Separates high-level segments (Core Technology, Domain/Context, and Variant).
-* **Single-Hyphen (`-`)**: Separates individual words within a single segment.
-
-### Examples:
-* `sdp-crown--automated-driving--code`
-  * Core Technology: `sdp-crown` (solver framework)
-  * Domain/Context: `automated-driving` (application area)
-  * Variant: `code` (primary implementation)
-* `dataset--winter-driving--main`
-  * Core Technology: `dataset` (data package)
-  * Domain/Context: `winter-driving` (test scenario)
-  * Variant: `main` (primary distribution repository)
