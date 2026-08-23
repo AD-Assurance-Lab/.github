@@ -1,34 +1,50 @@
 # Automated Driving Assurance Lab
 
-Welcome to the Automated Driving Assurance Lab workspace at Western Michigan University. This organization hosts the neural network verification architectures, safety assurance frameworks, simulation-free validation tools, and empirical datasets developed by our researchers.
+Western Michigan University.
 
-Our work focuses on bridging the gap between theoretical formal verification methods and practical automotive engineering safety standards.
+This organization hosts the neural network verification methods, safety assurance frameworks, and empirical datasets developed by our researchers.
+
+Our work is on **formal verification for automated driving**: proving that a driving policy stays within a specified safety margin across a whole range of operating conditions, rather than sampling those conditions and reporting a pass rate. We check every certificate against closed-loop driving, and we report the cases where the two disagree.
 
 ---
 
 ## Areas of Research
 
-### Neural Network Safety Verification
-We develop formal methods to calculate provable safety bounds for deep learning models used in automated driving. By propagating physical weather perturbations (such as contrast drop or brightness bias) through neural networks, we establish mathematical guarantees on vehicle steering outputs without relying solely on empirical simulation.
+### Certifying Driving Policies Under Adverse Conditions
+We construct disturbance families that are physically parameterized and characterized in simulation, then compute provable bounds on a policy's outputs across the entire family rather than at sampled points within it. Applied so far to end-to-end steering under weather and lighting, and to automatic emergency braking under degraded visibility.
+
+### Matching the Certificate to the Failure
+A safety property violated by sustained drift and one violated by a single brief event call for different certified quantities, and using the wrong one fails in both directions. Establishing which statistic belongs to which failure mode — and stating plainly where a certificate is blind — is a deliberate part of the work.
 
 ### Automotive Safety Standards Compliance
-We map formal verification evidence and neural network robustness metrics to established functional safety and regulatory standards, including:
+We map formal verification evidence and robustness results onto established functional safety and regulatory frameworks, so that a certificate can serve as an evidence node in a safety case:
 * ISO 26262 (Functional Safety)
 * ISO 21448 (Safety of the Intended Functionality / SOTIF)
-* ISO 8800 (Road Vehicles — Safety and Artificial Intelligence)
-* UL 4600 (Standard for Safety for Evaluation of Autonomous Products)
+* ISO/PAS 8800 (Road Vehicles — Safety and Artificial Intelligence)
+* UL 4600 (Evaluation of Autonomous Products)
+* ISO/TS 5083, forward-looking
 
 ### Real-World Winter Driving Datasets
-We collect and publish synchronized multimodal sensor data (camera, high-grade IMU, GPS/RTK, CAN telemetry, and pavement condition sensors) from real-world winter driving tests. This data is used to validate perception models and train safety-critical control systems under adverse weather conditions.
+We collect and publish synchronized multimodal sensor data — camera, high-grade IMU, GPS/RTK, CAN telemetry and pavement condition sensors — from real-world winter driving. The data supports perception validation and the study of how road condition changes the safety margin a controller has to work with.
 
-### Verification-Friendly Architectures
-To address the computational complexity of neural network verification, we research inherently stable network designs (such as Lipschitz-bounded networks) that allow lightweight safety solvers to achieve tight bounds efficiently.
+### Scaling Verification to Larger Models
+Verification cost is driven by model size rather than by the dimension of a physical disturbance family, which leaves an open question we are actively measuring: how large a model can be certified this way, and whether models with memory can be certified at all. Architectures designed for verifiability, such as Lipschitz-bounded networks, are part of that investigation.
 
 ---
 
 ## Anticipated Publications
 
-Our current active publications cover the following topics:
-* **Physics-Based Neural Network Certification**: Certifying steering safety margins under real-world weather bounds.
-* **Verification-to-Standards Mapping**: Establishing formal verification as compliance evidence in automotive engineering safety cases.
-* **Multimodal Winter Perception Datasets**: Introducing synchronized weather telemetry and vehicle dynamics data for adverse condition verification.
+| Topic | Venue |
+|---|---|
+| Formal verification of end-to-end steering under adverse conditions | arXiv preprint |
+| Certifying automatic emergency braking across illumination conditions | arXiv preprint |
+| Certificates for multiple and combined disturbance conditions | SAE WCX |
+| The winter driving dataset | SAE WCX |
+| Formal verification as evidence in automotive safety standards | SAE WCX |
+| Winter driving dataset | SAE JCAV |
+
+---
+
+## Contact
+
+Zach Asher, AD Assurance Lab, Western Michigan University.
