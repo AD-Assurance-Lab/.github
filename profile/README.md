@@ -22,13 +22,14 @@ We map formal verification evidence and robustness results onto established func
 * ISO 21448 (Safety of the Intended Functionality / SOTIF)
 * ISO/PAS 8800 (Road Vehicles — Safety and Artificial Intelligence)
 * UL 4600 (Evaluation of Autonomous Products)
+* FMVSS No. 127 (Automatic Emergency Braking)
 * ISO/TS 5083, forward-looking
 
 ### Real-World Winter Driving Datasets
 We collect and publish synchronized multimodal sensor data — camera, high-grade IMU, GPS/RTK, CAN telemetry and pavement condition sensors — from real-world winter driving. The data supports perception validation and the study of how road condition changes the safety margin a controller has to work with.
 
 ### Scaling Verification to Larger Models
-Verification cost is driven by model size rather than by the dimension of a physical disturbance family, which leaves an open question we are actively measuring: how large a model can be certified this way, and whether models with memory can be certified at all. Architectures designed for verifiability, such as Lipschitz-bounded networks, are part of that investigation.
+Verification cost is driven by model size rather than by the dimension of a physical disturbance family, which leaves an open question: how large a model can be certified this way, and whether models with memory can be certified at all. Architectures designed for verifiability, such as Lipschitz-bounded networks, are one avenue we are investigating.
 
 ---
 
