@@ -33,10 +33,18 @@ Verification cost is driven by model size rather than by the dimension of a phys
 
 ---
 
-## Anticipated Publications
+## Publications
 
-| Topic | Venue |
-|---|---|
+| Topic | Venue | Status |
+|---|---|---|
+| Formal verification of end-to-end steering under adverse conditions | arXiv | Preprint |
+| Certifying automatic emergency braking across illumination conditions | SAE WCX | In preparation |
+| Formal verification as evidence in automotive safety standards | SAE WCX | In preparation |
+| Certificates for multiple and combined disturbance conditions | To be decided | In progress |
+| The winter driving dataset | SAE WCX | In progress |
+| Winter driving dataset | SAE JCAV | In progress |
+
+---|---|
 | Formal verification of end-to-end steering under adverse conditions | arXiv preprint |
 | Certifying automatic emergency braking across illumination conditions | arXiv preprint |
 | Certificates for multiple and combined disturbance conditions | SAE WCX |
