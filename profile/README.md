@@ -37,7 +37,7 @@ Verification cost is driven by model size rather than by the dimension of a phys
 
 | Topic | Venue | Status |
 |---|---|---|
-| Formal verification of end-to-end steering under adverse conditions | arXiv | Preprint |
+| Formal verification of end-to-end steering under adverse conditions | [arXiv:2609.10951](https://arxiv.org/abs/2609.10951) | Published |
 | Certifying automatic emergency braking across illumination conditions | SAE WCX | In preparation |
 | Formal verification as evidence in automotive safety standards | SAE WCX | In preparation |
 | Certificates for multiple and combined disturbance conditions | To be decided | In progress |
